@@ -1,3 +1,98 @@
 /*#region ===== Testimonials styles ===== */
 
+.testimonials-section {
+  background-color: #f2fafa;
+}
+
+.testimonials-section-title {
+  font-size: 52px;
+}
+
+.testimonials-section-text {
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.testimonials-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+}
+
+.testimonials-item {
+  width: 100%;
+  background-color: #dfebeb;
+  border-radius: 24px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.testimonials-item-text {
+  font-size: 22px;
+  line-height: 1.6;
+  text-align: center;
+  align-self: self-start;
+  color: #0d0b0a;
+}
+
+.testimonials-item-author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.testimonials-author-img {
+  margin-bottom: 16px;
+}
+
+.testimonials-author-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.testimonials-author-post {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .testimonials-section-title {
+    font-size: 40px;
+  }
+
+  .testimonials-item-donna,
+  .testimonials-item-sophie {
+    height: 356px;
+  }
+
+  .testimonials-item-rachel,
+  .testimonials-item-emma {
+    height: 321px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .testimonials-section-title {
+    font-size: 52px;
+  }
+
+  .testimonials-list {
+    column-gap: 24px;
+  }
+
+  .testimonials-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .testimonials-author-post {
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.6;
+  }
+}
+
 /*#endregion ===== Testimonials styles ===== */
