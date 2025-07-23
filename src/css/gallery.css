@@ -1,3 +1,40 @@
 /*#region ===== Gallery styles ===== */
 
+
+.gallery-container {
+    padding: 0 20px;
+}
+
+.gallary-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-items {
+    border-radius: 16px;
+    width: calc((100% - 24px) / 2);
+}
+
+.gallery-img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-container {
+        padding: 0 32px;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .gallery-container {
+        padding: 0 12px;
+    }
+
+    .gallery-items {
+
+        width: calc((100% - 48px) / 3);
+    }
+}
+
 /*#endregion ===== Gallery styles ===== */
