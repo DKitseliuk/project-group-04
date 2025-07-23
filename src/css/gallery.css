@@ -24,6 +24,10 @@
     .gallery-container {
         padding: 0 32px;
     }
+
+    .gallary-paragraph {
+        margin-bottom: 80px;
+    }
 }
 
 @media screen and (min-width: 1336px) {
