@@ -1,19 +1,54 @@
 /* Styles for Mobile devices */
+body {
+  font-family: "Sarabun", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0d0b0a;
+  background-color: #f2fafa;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.footer {
+  padding: 48px 0;
+}
+
 .container {
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
   padding: 0 16px;
 }
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+
+  .section,
+  .footer {
+    padding: 40px 0;
+  }
+
   .container {
     max-width: 768px;
+    padding: 0 32px;
   }
 }
+
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1336px) {
+  .section {
+    padding: 112px 0;
+  }
+
+  .footer {
+    padding: 64px 0;
+  }
+
   .container {
-    max-width: 1200px;
+    max-width: 1336px;
+    padding: 0 12px;
   }
 }
