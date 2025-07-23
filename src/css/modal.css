@@ -1,3 +1,228 @@
-/*#region ===== Modal styles ===== */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(46, 47, 66, 0.4);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+    padding: 64px 16px 32px;
+    background-color: #dfebeb;
+    border-radius: 4px;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.backdrop:not(.is-open) .modal {
+    transform: translate(-50%, -100%);
+}
+
+.close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.close:hover,
+.close:focus {
+    border: none;
+    background-color: #404bbf;
+}
+
+.close:hover .icon-close,
+.close:focus .icon-close {
+    fill: #ffffff;
+}
+
+.modal-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+/*form*/
+.backdrop {
+    padding: 64px 16px 112px 16px;
+}
+
+.modal {
+
+    width: 375px;
+    height: 720px;
+    background-color: #dfebeb;
+}
+
+.modal-title {
+    font-weight: 400;
+    font-size: 40px;
+
+    /* line-height: 48px; */
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+}
+
+.modal-text {
+    font-weight: 400;
+    font-size: 18px;
+
+    /* line-height: 25px; */
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+}
+
+.modal-sub {
+    font-weight: 400;
+    font-size: 44px;
+
+    /* line-height: 53px; */
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+
+}
+
+
+.form-modal {
+    margin-bottom: 24px;
+
+}
+
+.form-label {
+    font-weight: 400;
+    font-size: 16px;
+
+    line-height: 160%;
+    color: #0d0b0a;
+    margin-bottom: 4px;
+}
+
+.content-name {
+    position: relative;
+}
+
+.text-name {
+    font-weight: 400;
+    font-size: 16px;
+    width: 343px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    background: rgba(13, 11, 10, 0.05);
+    padding: 8px 12px;
+
+    color: rgba(13, 11, 10, 0.6);
+    outline: transparent;
+
+}
+
+.check-btn {
+    background-color: #c2d9fc;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 343px;
+    height: 46px;
+
+}
+
+.form-group-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .modal {
+        border-radius: 16px;
+        padding: 64px 92px 32px 92px;
+        width: 704px;
+        height: 573px;
+    }
+
+    .form-group-row {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .form-group-row .form-modal {
+        flex: 1;
+    }
+
+    .text-name {
+        width: 100%;
+    }
+
+    .check-btn {
+        display: block;
+        margin: 32px auto 0 auto;
+        font-weight: 500;
+        font-size: 16px;
+
+        line-height: 160%;
+        color: #0d0b0a;
+        margin-top: 32px;
+        border: 1px solid #c2d9fc;
+        border-radius: 100px;
+        padding: 10px 24px;
+        width: 155px;
+        height: 46px;
+        background-color: #c2d9fc;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .modal {
+
+        width: 768px;
+
+    }
+}/*#region ===== Modal styles ===== */
 
 /*#endregion ===== Modal styles ===== */
