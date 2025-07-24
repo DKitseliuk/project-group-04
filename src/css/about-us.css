@@ -1,6 +1,6 @@
 /*#region ===== About us styles ===== */
 .about-us {
-    background-color: #DFEBEB;
+    background-color: #dfebeb;
     padding: 112px 0;
 }
 
@@ -11,69 +11,81 @@
 }
 
 .about-us-title {
-   
+    font-weight: 400;
     font-size: 40px;
- 
+
+    /* line-height: 48px; */
     line-height: 120%;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #0D0B0A;
+    color: #0d0b0a;
     margin-bottom: 24px;
 }
 
 .about-us-text {
-  
+    font-weight: 400;
     font-size: 16px;
-   
+
+    /* line-height: 26px; */
     line-height: 160%;
     text-align: center;
-    color: #0D0B0A;
+    color: #0d0b0a;
     margin-bottom: 48px;
 }
+
 
 .about-us-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 72px;
+
 }
 
 .about-us-item {
+
     width: 100%;
 }
 
+
 .about-us-item-title {
-  
+    font-weight: 400;
     font-size: 24px;
-  
+
+    /* line-height: 34px; */
     line-height: 140%;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #0D0B0A;
+    color: #0d0b0a;
     margin-bottom: 24px;
 }
 
-.about-us-text{
-    
+.about-us-text {
+    font-weight: 400;
     font-size: 16px;
+
     line-height: 160%;
     text-align: center;
-    color: #0D0B0A;
-    margin-bottom: 48px;
+    color: #0d0b0a;
+
 }
 
-.btn-container{
+.link-wrapper {
     width: 100%;
     text-align: center;
-    
+    margin-top: 30px;
 }
 
-.button-about {
+.link-button {}
+
+
+.link-button {
     display: inline-block;
     padding: 10px 24px;
-    border: 1px solid #C2D9FC;
-    background-color: #C2D9FC;
+    border: 1px solid #c2d9fc;
+    background-color: #c2d9fc;
     border-radius: 100px;
+
     width: 343px;
     height: 46px;
     text-decoration: none;
@@ -83,8 +95,8 @@
     transition: all 0.3s ease;
 }
 
-.button-about:hover {
-    background: linear-gradient(to right, #B0D4FF, #C2E0FF);
+.link-button:hover {
+    background: linear-gradient(to right, #b0d4ff, #c2e0ff);
 }
 
 @media screen and (min-width: 768px) {
@@ -92,7 +104,7 @@
         width: calc((100% - 24px) / 2);
     }
 
-    .btn-container{
+    .link-wrapper {
         width: 100%;
         padding: 10px 24px;
         width: 110px;
@@ -102,10 +114,6 @@
         margin-top: 30px;
     }
 
-    .button-about {
-        white-space: nowrap;
-        /* Не переносить текст */
-    }
 }
 
 @media screen and (min-width: 1336px) {
@@ -117,13 +125,13 @@
         width: calc((100% - 72px) / 4);
     }
 
-    .about-us-item-title{
+    .about-us-item-title {
         text-align: left;
         font-weight: 500;
         font-size: 20px;
     }
 
-    .btn-container{
+    .link-wrapper {
         width: 100%;
         padding: 10px 24px;
         width: 110px;
@@ -133,8 +141,5 @@
         margin-top: 30px;
     }
 
-    .button-about {
-        white-space: nowrap;
-    }
 }
 /*#endregion ===== About us styles ===== */
