@@ -1,9 +1,4 @@
 /*#region ===== Testimonials styles ===== */
-
-.testimonials-section {
-  background-color: #f2fafa;
-}
-
 .testimonials-section-title {
   font-size: 52px;
 }
@@ -103,5 +98,4 @@
     padding: 29.5px 12px;
   }
 }
-
 /*#endregion ===== Testimonials styles ===== */
