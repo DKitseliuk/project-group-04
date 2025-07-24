@@ -1,5 +1,6 @@
-/*#region ===== Hero styles ===== */
-/*dekstop*/
+/*#region ===== Hero styles (Mobile-First) ===== */
+
+/* === Базовые стили: mobile first === */
 .hero {
   padding-top: 0;
   max-height: 100%;
@@ -16,15 +17,16 @@
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  gap: 24px;
-  padding: 80px 67px 80px 64px;
+  gap: 16px;
+  padding: 48px 16px;
 }
 
 .hero-title {
-  font-size: 72px;
+  font-size: 32px;
   text-align: start;
   margin: 0;
-  max-width: 644px;
+  max-width: 343px;
+  font-size: 44px;
 }
 
 .hero-bundle {
@@ -34,27 +36,28 @@
 .hero-text {
   text-align: start;
   line-height: 160%;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   letter-spacing: 0;
-  max-width: 641px;
+  max-width: 343px;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 16px;
   line-height: 160%;
   font-weight: 500;
 }
 
 .hero-join-btn {
-  padding: 10px 24px;
+  padding: 10px 132px;
   background-color: #c2d9fc;
   border: 1px solid #c2d9fc;
   border-radius: 50px;
 }
 
 .hero-learn-btn {
-  padding: 10px 24px;
+  padding: 10px 124px;
   background-color: #0d0b0a0d;
   border: 1px solid #0d0b0a0d;
   border-radius: 50px;
@@ -65,12 +68,12 @@
   opacity: 0.5;
 }
 
-/*tablet*/
-@media (max-width: 768px) and (max-width: 1335px) {
+/* === Tablet styles (768px+) === */
+@media (min-width: 768px) {
   .hero-container {
     padding: 24px 0 24px 32px;
     gap: 8px;
-    justify-content: unset;
+    justify-content: flex-start;
   }
 
   .hero-title {
@@ -78,7 +81,13 @@
     max-width: 423px;
   }
 
+  .hero-text {
+    max-width: 641px;
+    margin-bottom: 32px;
+  }
+
   .hero-buttons {
+    flex-wrap: nowrap;
     gap: 16px;
   }
 
@@ -91,32 +100,30 @@
   }
 }
 
-/*mobile*/
-@media (min-width: 320px) and (max-width: 767px) {
+/* === Desktop styles (1336px+) === */
+@media (min-width: 1336px) {
   .hero-container {
-    padding: 48px 16px;
+    padding: 80px 67px 80px 64px;
+    gap: 24px;
+    justify-content: center;
   }
 
   .hero-title {
-    max-width: 343px;
+    font-size: 72px;
+    max-width: 644px;
   }
 
   .hero-text {
-    margin-bottom: 24px;
-    max-width: 343px;
+    max-width: 641px;
+  }
+
+  .hero-join-btn,
+  .hero-learn-btn {
+    padding: 10px 24px;
   }
 
   .hero-buttons {
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .hero-join-btn {
-    padding: 10px 132px;
-  }
-
-  .hero-learn-btn {
-    padding: 10px 124px;
+    gap: 8px;
   }
 }
 
