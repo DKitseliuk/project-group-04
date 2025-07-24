@@ -1,6 +1,7 @@
 .section-yoga-classes {
     background: #dfebeb;
 }
+
 .yoga-classes-nav-list {
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +16,8 @@
 .yoga-classes-img {
     margin-bottom: 24px;
     display: block;
+    width: 100%;
+    height: auto;
        
     }
 .yoga-classes-item-title {
@@ -27,76 +30,107 @@
         color: #0d0b0a;
         margin-bottom: 20px;
 }
-
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #c2d9fc;
+.yoga-classes-item-text{
+   
+    font-size: 16px;
+    
+}
+.yoga-classes-link-button {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #c2d9fc;
         border-radius: 100px;
         padding: 10px 24px;
         width: 100%;
         max-width: 343px;
         height: 46px;
-        background: #c2d9fc;
-        cursor: pointer;
+        background-color: #c2d9fc;
 
         font-family: "Sarabun", sans-serif;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #0d0b0a;
-            margin: 0 auto;
-}
-.text-join-now {
-    display: none;
-}
-@media (min-width: 768px) {
-    .yoga-classes-nav-list {
-            column-gap: 24px;
-            justify-content: center;
-        }
-    
-        .yoga-classes-list-item {
-            width: calc((100% - 24px) / 2);
-    
-        }
-    
-        .yoga-classes-list-item:nth-child(1) {
-            margin-bottom: 61px;
-        }
-    
-        .yoga-classes-list-item:nth-child(2) {
-            margin-bottom: 27px;
-        }
-    
-        .yoga-classes-list-item:nth-child(3) {
-            width: 100%;
-            max-width: 100%;
-        }
-    
-        .btn-wrapper {
-            display: flex;
-            justify-content: center;
-    
-        }
-    .text-join-now {
-        display: inline;
-    }
-    .btn {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #0d0b0a;
         
-            width: 110px;
-            height: 46px;
-    }
 }
 
-@media (min-width: 1158px) {
+.link-button-text {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .yoga-classes-subtitle {
+        margin-bottom: 16px;
+    }
     .yoga-classes-nav-list {
-        
-        gap: 24px;
+            
+            gap: 27px 24px;
+            justify-content: center;
+            padding-bottom: 21px;
+            margin-bottom: 40px;
+        }
+    .yoga-classes-img {
+        margin-bottom: 16px;
     }
-    .yoga-classes-list-item {
-        width: calc((100% - 48px) / 3);
+    .yoga-classes-item-title {
         margin-bottom: 0;
+        }
+    
+    .yoga-classes-list-item {
+        width: calc((100% - 24px) / 2);
+
     }
+
+    .yoga-classes-list-item:last-child {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .yoga-classes-link-button {
+        width: 110px;
+        margin: 0 auto;
+    }
+    .link-button-text {
+        display: inline;
+    }
+   
+}
+
+@media (min-width: 1336px) {
+.yoga-classes-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px 24px;
+    justify-content: center;
+    padding-bottom: 26px;
+    
+}
+
+  .yoga-classes-item-title {
+
+    font-size: 36px;
+    margin-bottom: 24px;
+
+  }
+ .yoga-classes-list-item {
+     width: calc((100% - 48px) / 3);
+     max-width: none;
+     margin: 0;
+
+ }
+   .yoga-classes-list-item:last-child {
+    width: calc((100% - 48px) / 3);
+        max-width: none;
+            margin: 0;
+   }
+   
+   .yoga-classes-img {
+       margin-bottom: 32px;
+       display: block;
+       width: 100%;
+       height: auto;
+
+   }
 }
