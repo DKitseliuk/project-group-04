@@ -1,3 +1,132 @@
 /*#region ===== Pricing styles ===== */
 
+.pricing-outer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.pricing-outer-item {
+    width: 100%;
+    background-color: #dfebeb;
+    border: 0px solid rgba(13, 11, 10, 0.15);
+    border-radius: 16px;
+    padding: 32px 24px;
+}
+
+.pricing-outer-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.pricing-outer-text {
+    font-family: "Cabin", sans-serif;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.pricing-inner-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 8px 0;
+    margin-bottom: 32px;
+}
+
+.pricing-inner-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.pricing-inner-text {
+    line-height: 1.6;
+}
+
+.pricing-join-button {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .pricing-text {
+        margin-bottom: 24px;
+    }
+
+    .pricing-outer-list {
+        gap: 24px;
+    }
+
+    .pricing-outer-item {
+        width: calc((100% - 24px) / 2);
+        padding: 16px;
+    }
+
+    .pricing-outer-title {
+        font-size: 22px;
+    }
+
+    .pricing-outer-text {
+        font-size: 72px;
+        margin-bottom: 32px;
+    }
+
+    .pricing-inner-list {
+        margin-bottom: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1335px) {
+    .pricing-outer-item:last-child {
+        width: 100%;
+        padding: 86px 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 24px 32px;
+    }
+
+    .pricing-outer-item:last-child .pricing-outer-title {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-bottom: 0;
+    }
+
+    .pricing-outer-item:last-child .pricing-outer-text {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-bottom: 0;
+    }
+
+    .pricing-outer-item:last-child .pricing-inner-list {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1336px) {
+    .pricing-text {
+        margin-bottom: 40px;
+    }
+
+    .pricing-outer-item {
+        width: calc((100% - 2 * 24px) / 3);
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing-inner-list {
+        margin-bottom: 32px;
+        flex-grow: 1;
+    }
+}
+
 /*#endregion ===== Pricing styles ===== */
