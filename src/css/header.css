@@ -1,3 +1,109 @@
 /*#region ===== Header styles ===== */
 
+
+.header-menu-list,
+.header-btn {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.burger-btn {
+    padding: 0;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-btn-mob {
+    display: inline-block;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding: 4px 20px;
+    width: 74px;
+    height: 34px;
+    background-color: #c2d9fc;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.header-btn-mob:hover,
+.header-btn-mob:focus {
+    opacity: 0.5;
+}
+
+.header-btn-mob:active {
+    border: 1px solid #c2d9fc;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .header-btn-mob {
+        display: none;
+    }
+
+    .header-btn {
+        display: inline-block;
+        border: 1px solid #c2d9fc;
+        border-radius: 100px;
+        padding: 8px 20px;
+        min-width: 105px;
+        height: 42px;
+        background-color: #c2d9fc;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-btn:hover,
+    .header-btn:focus {
+        opacity: 0.5;
+    }
+
+    .header-btn:active {
+        border: 1px solid #c2d9fc;
+        background-color: transparent;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .burger-btn {
+        display: none;
+    }
+
+    .header-menu-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .header-menu-link {
+        display: block;
+        line-height: 1.6;
+        color: #0d0b0a;
+        padding-bottom: 4px;
+    }
+
+    .header-menu-link.current {
+        position: relative;
+    }
+
+    .header-menu-link.current::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(13, 11, 10, 0.5);
+    }
+}
+
+
 /*#endregion ===== Header styles ===== */
