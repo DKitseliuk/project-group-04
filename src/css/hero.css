@@ -1,6 +1,6 @@
-/*#region ===== Hero styles (Mobile-First) ===== */
+/*#region ===== Header styles ===== */
 
-/* === Базовые стили: mobile first === */
+/* === Mobile === */
 .hero {
   padding-top: 0;
   max-height: 100%;
@@ -68,7 +68,7 @@
   opacity: 0.5;
 }
 
-/* === Tablet styles (768px+) === */
+/* === Tablet === */
 @media (min-width: 768px) {
   .hero-container {
     padding: 24px 0 24px 32px;
@@ -100,7 +100,7 @@
   }
 }
 
-/* === Desktop styles (1336px+) === */
+/* === Desktop  === */
 @media (min-width: 1336px) {
   .hero-container {
     padding: 80px 67px 80px 64px;
@@ -127,4 +127,4 @@
   }
 }
 
-/*#endregion ===== Hero styles ===== */
+/*#endregion ===== Header styles ===== */
