@@ -26,7 +26,6 @@
   padding: 12px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
   row-gap: 32px;
 }
@@ -35,14 +34,13 @@
   font-size: 22px;
   line-height: 1.6;
   text-align: center;
-  align-self: self-start;
   color: #0d0b0a;
+  margin-bottom: auto;
 }
 
 .testimonials-item-author {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   flex-direction: column;
 }
 
@@ -60,23 +58,23 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .testimonials-section-title {
     font-size: 40px;
   }
 
-  .testimonials-item-donna,
-  .testimonials-item-sophie {
+  .testimonials-item:nth-child(1),
+  .testimonials-item:nth-child(2) {
     height: 356px;
   }
 
-  .testimonials-item-rachel,
-  .testimonials-item-emma {
+  .testimonials-item:nth-child(3),
+  .testimonials-item:nth-child(4) {
     height: 321px;
   }
 }
 
-@media (min-width: 1336px) {
+@media screen and (min-width: 1336px) {
   .testimonials-section-title {
     font-size: 52px;
   }
@@ -89,9 +87,20 @@
     width: calc((100% - 24px) / 2);
   }
 
+  .testimonials-item:nth-child(1),
+  .testimonials-item:nth-child(4) {
+    padding: 11px 12px;
+  }
+
   .testimonials-author-post {
     font-family: 'Sarabun', sans-serif;
     line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1335px) {
+  .testimonials-item:nth-child(1) {
+    padding: 29.5px 12px;
   }
 }
 
