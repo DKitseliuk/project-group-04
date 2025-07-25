@@ -1,5 +1,9 @@
 /*#region ===== Common styles ===== */
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -8,17 +12,17 @@
     height: 100%;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.25);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
     transition: opacity 250ms ease-in-out,
         visibility 250ms ease-in-out;
 }
 
 .backdrop.is-hidden {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .visually-hidden {
@@ -55,9 +59,71 @@
     margin-bottom: 48px;
 }
 
-.button-text {
+.link-wrapper {
+    text-align: center;
+}
+
+.link-button,
+.link-button-gray {
+    display: inline-block;
+    text-align: center;
+}
+
+.link-button,
+.button {
+    background-color: #c2d9fc;
+    border: 1px solid #c2d9fc;
+}
+
+.link-button-gray {
+    background-color: rgba(13, 11, 10, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: border-color 250ms ease-in-out;
+}
+
+.button,
+.link-button,
+.link-button-gray {
+    border-radius: 100px;
+    height: 46px;
+    padding: 10px 24px;
     font-weight: 500;
     line-height: 1.6;
+    transition: opacity 250ms ease-in-out,
+        background-color 250ms ease-in-out;
+}
+
+.button:hover,
+.button:focus,
+.link-button:hover,
+.link-button:focus,
+.link-button-gray:hover,
+.link-button-gray:focus {
+    opacity: 0.5;
+}
+
+.button:active,
+.link-button:active,
+.link-button-gray:active {
+    background-color: transparent;
+    opacity: 1;
+}
+
+.link-button-gray:active {
+    border-color: #868584;
+}
+
+.social-link-svg {
+    fill: #0d0b0a;
+}
+
+.social-link:hover,
+.social-link:focus {
+    opacity: 0.5;
+}
+
+.social-link:active {
+    opacity: 0.3;
 }
 
 @media only screen and (min-width: 768px) {
