@@ -63,7 +63,8 @@
     text-align: center;
 }
 
-.link-button {
+.link-button,
+.link-button-gray {
     display: inline-block;
     text-align: center;
 }
