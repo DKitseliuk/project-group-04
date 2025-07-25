@@ -109,12 +109,7 @@
   color: #0d0b0a;
   padding-top: 12px;
 }
-.quick-links {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #0d0b0a;
-}
+
 .footer-container {
   background-color: #fff;
   width: 343px;
@@ -174,7 +169,7 @@
 }
 
 .quick-links-item:first-child {
-  padding-top: 12px;
+  padding-top: 16px;
 }
 .quick-links-item {
   padding-bottom: 8px;
@@ -206,7 +201,9 @@
   border-radius: 100px;
   background-color: #c2d9fc;
 }
-
+.desktop {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .footer-container {
     width: 704px;
@@ -245,5 +242,31 @@
   .footer-container {
     width: 1312px;
     height: 329px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1312px;
+  }
+
+  .your-email {
+    width: 501px;
+  }
+  .subscribe {
+    width: 595px;
+    margin-right: 250px;
+  }
+  .links {
+    width: 166px;
+  }
+  .end-text {
+    display: none;
+  }
+  .desktop {
+    display: contents;
+  }
+  .text-footer {
+    padding-bottom: 24px;
+  }
+  .connect {
+    width: 166px;
   }
 }
