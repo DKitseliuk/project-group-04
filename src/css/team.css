@@ -1,3 +1,42 @@
 /*#region ===== Team styles ===== */
+.team-outer-list {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.team-outer-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.member-info .headers {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+} 
+
+.member-info .post, .member-info .description {
+    line-height: 1.6;
+    text-align: center;
+}
+
+.member-info .description {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.team-inner-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 14px;
+}
 
 /*#endregion ===== Team styles ===== */
