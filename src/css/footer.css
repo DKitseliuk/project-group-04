@@ -5,12 +5,8 @@
   color: #0d0b0a;
   width: 279px;
   padding-bottom: 20px;
-  padding-top: 30px;
 }
 .your-email {
-  border-radius: 12px;
-  width: 279px;
-  height: 42px;
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 12px;
   padding: 8px 12px;
@@ -22,9 +18,9 @@
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 100px;
   padding: 10px 24px;
-  width: 279px;
   height: 46px;
   background: rgba(13, 11, 10, 0.05);
+  width: 100%;
 }
 .text-footer {
   font-weight: 400;
@@ -44,7 +40,10 @@
   height: 918px;
   border: 0px solid rgba(13, 11, 10, 0.15);
   border-radius: 16px;
-  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 32px 32px;
 }
 .links-quick {
   font-weight: 400;
@@ -69,72 +68,6 @@
   font-size: 14px;
   line-height: 1.6;
   color: #0d0b0a;
-  padding-top: 48px;
-}
-.subscribe {
-  margin-bottom: 48px;
-}
-
-.subscribe-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #0d0b0a;
-  width: 279px;
-  padding-bottom: 20px;
-}
-.your-email {
-  border-radius: 12px;
-  width: 279px;
-  height: 42px;
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 12px;
-  padding: 8px 12px;
-  width: 279px;
-  height: 42px;
-  background: rgba(13, 11, 10, 0.05);
-}
-.btn-footer {
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 100px;
-  padding: 10px 24px;
-  width: 279px;
-  height: 46px;
-  background: rgba(13, 11, 10, 0.05);
-}
-.text-footer {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6;
-  color: #0d0b0a;
-  padding-top: 12px;
-}
-
-.footer-container {
-  background-color: #fff;
-  width: 343px;
-  height: 918px;
-  border: 0px solid rgba(13, 11, 10, 0.15);
-  border-radius: 16px;
-  padding: 32px;
-}
-.links-quick {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #0d0b0a;
-}
-.connect-us {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #0d0b0a;
-}
-.links-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #0d0b0a;
 }
 
 .subscribe {
@@ -146,71 +79,57 @@
   width: 279px;
   height: 190px;
 }
-.links {
-  width: 279px;
-  height: 190px;
-  margin-bottom: 40px;
-}
 
-.containe-email {
-  padding-bottom: 16px;
-}
-
-.connect {
-  width: 279px;
-  height: 190px;
-}
 .links {
   width: 279px;
   height: 190px;
 }
-.containe-email {
-  padding-bottom: 16px;
-}
 
-.quick-links-item:first-child {
-  padding-top: 16px;
+.connect,
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
+.social-list,
 .quick-links-item {
   padding-bottom: 8px;
 }
-
-.social-list:first-child {
-  padding-top: 21px;
-}
-.social-icon {
-  display: flex;
-  align-items: center;
+.social-list:last-child,
+.quick-links-item:last-child {
+  padding: 0;
 }
 .links-text {
-  padding-bottom: 8px;
   display: flex;
-  column-gap: 12px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
-.btn-footer:hover,
-.btn-footer:focus {
-  background-color: #c2d9fc;
-}
-.your-email:valid {
-  border: 1px solid #b10000;
-}
-.social-icon:hover {
-  border: 1px solid #c2d9fc;
-  width: 26px;
-  height: 26px;
-  border-radius: 100px;
-  background-color: #c2d9fc;
-}
+
 .desktop {
   display: none;
 }
+
+.email-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .footer-container {
     width: 704px;
     height: 571px;
   }
+  .subscribe {
+    width: 640px;
+    height: 187px;
+  }
   .subscribe-text {
     width: 640px;
+  }
+  .email-input {
+    flex-wrap: initial;
   }
   .your-email {
     width: 546px;
@@ -218,23 +137,8 @@
   .btn-footer {
     width: 78px;
   }
-  .text-footer {
-    width: 640px;
-  }
-  .email-input {
-    display: flex;
-    gap: 16px;
-  }
-
   .footer-wrapper {
     display: flex;
-    gap: 40px;
-  }
-  .subscribe {
-    height: 187px;
-  }
-  .end-text {
-    padding-top: 0;
   }
 }
 
@@ -242,31 +146,23 @@
   .footer-container {
     width: 1312px;
     height: 329px;
-    display: flex;
     flex-wrap: wrap;
-    max-width: 1312px;
-  }
-
-  .your-email {
-    width: 501px;
-  }
-  .subscribe {
-    width: 595px;
-    margin-right: 250px;
-  }
-  .links {
-    width: 166px;
-  }
-  .end-text {
-    display: none;
+    gap: 250px;
   }
   .desktop {
     display: contents;
   }
-  .text-footer {
-    padding-bottom: 24px;
+  .end-text {
+    display: none;
   }
+  .your-email {
+    width: 501px;
+  }
+  .links,
   .connect {
     width: 166px;
+  }
+  .text-footer {
+    padding-bottom: 24px;
   }
 }
