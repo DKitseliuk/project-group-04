@@ -192,3 +192,17 @@
   display: flex;
   column-gap: 12px;
 }
+.btn-footer:hover,
+.btn-footer:focus {
+  background-color: #c2d9fc;
+}
+.your-email:valid {
+  border: 1px solid #b10000;
+}
+.social-icon:hover {
+  border: 1px solid #c2d9fc;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  background-color: #c2d9fc;
+}
