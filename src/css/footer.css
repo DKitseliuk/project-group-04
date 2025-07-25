@@ -206,3 +206,44 @@
   border-radius: 100px;
   background-color: #c2d9fc;
 }
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    width: 704px;
+    height: 571px;
+  }
+  .subscribe-text {
+    width: 640px;
+  }
+  .your-email {
+    width: 546px;
+  }
+  .btn-footer {
+    width: 78px;
+  }
+  .text-footer {
+    width: 640px;
+  }
+  .email-input {
+    display: flex;
+    gap: 16px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    gap: 40px;
+  }
+  .subscribe {
+    height: 187px;
+  }
+  .end-text {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .footer-container {
+    width: 1312px;
+    height: 329px;
+  }
+}
