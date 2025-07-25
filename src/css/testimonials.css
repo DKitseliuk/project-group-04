@@ -82,11 +82,6 @@
     width: calc((100% - 24px) / 2);
   }
 
-  .testimonials-item:nth-child(1),
-  .testimonials-item:nth-child(4) {
-    padding: 11px 12px;
-  }
-
   .testimonials-author-post {
     font-family: 'Sarabun', sans-serif;
     line-height: 1.6;
@@ -95,7 +90,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1335px) {
   .testimonials-item:nth-child(1) {
-    padding: 29.5px 12px;
+    padding: 30px 12px;
   }
 }
 /*#endregion ===== Testimonials styles ===== */
