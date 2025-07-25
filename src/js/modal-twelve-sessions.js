@@ -1,12 +1,12 @@
 (() => {
     const refs = {
-      openModalBtn: document.querySelector("[data-backdrop-eight-sessions-open]"),
-      closeModalBtn: document.querySelector("[data-backdrop-eight-sessions-close]"),
-      modal: document.querySelector("[data-backdrop-eight-sessions]"),
+      openModalBtn: document.querySelector("[data-backdrop-twelve-sessions-open]"),
+      closeModalBtn: document.querySelector("[data-backdrop-twelve-sessions-close]"),
+      modal: document.querySelector("[data-backdrop-twelve-sessions]"),
     };
   
     if (!refs.openModalBtn || !refs.closeModalBtn || !refs.modal) return;
-
+  
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
     refs.modal.addEventListener("click", (event) => {
