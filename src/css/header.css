@@ -2,7 +2,7 @@
 
 
 .header-menu-list,
-.header-btn {
+.link-button-text {
     display: none;
 }
 
@@ -25,20 +25,13 @@
 
 .header-btn-mob {
     padding: 4px 20px;
-    width: 74px;
+    min-width: 74px;
     height: 34px;
 }
 
 @media screen and (min-width: 768px) {
-    .header-btn-mob {
-        display: none;
-    }
-
-    .header-btn {
+    .link-button-text {
         display: inline-block;
-        padding: 8px 20px;
-        min-width: 105px;
-        height: 42px;
     }
 }
 
@@ -76,7 +69,7 @@
     }
 }
 
-.menu {
+/* .menu {
     background-color: #f2fafa;
     display: flex;
     justify-content: space-between;
@@ -99,6 +92,10 @@
 .header-menu-item-menu:not(:last-child) {
     margin-bottom: 24px;
 }
+
+.header-btn-menu {
+    max-width: 343px;
+} */
 
 
 /*#endregion ===== Header styles ===== */

@@ -1,3 +1,37 @@
 /*#region ===== Mobile and tablet styles ===== */
+.menu {
+    background-color: #f2fafa;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.munu-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.header-menu-list-menu {
+    padding-top: 16px;
+    margin-bottom: auto;
+
+}
+
+.header-menu-item-menu:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.header-btn-menu {
+    margin-bottom: 160px;
+    max-width: 374px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-btn-menu {
+        max-width: 204px;
+    }
+}
 
 /*#endregion ===== Mobile and tablet styles ===== */

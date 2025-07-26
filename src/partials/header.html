@@ -1,5 +1,5 @@
 <header class="header-page">
-    <div class="container header-container">
+    <nav class="container header-container">
         <ul class="header-menu-list">
             <li class="header-menu-item"><a class="header-menu-link current" href="#yoga">Yoga Classes</a></li>
             <li class="header-menu-item"><a class="header-menu-link" href="#team">Team</a></li>
@@ -9,42 +9,19 @@
         </ul>
         <button type="button" class="burger-btn" data-backdrop-menu-open>
             <svg class="burger-icon" width="24" height="24">
-                <use href="../img/icons.svg#icon-menu"></use>
+                <use href="/img/icons.svg#icon-menu"></use>
             </svg>
         </button>
         <a class="logo-link" href="../index.html">
             <svg class="icon-company-logo" width="84" height="36">
-                <use href="../img/icons.svg#icon-company-logo"></use>
+                <use href="/img/icons.svg#icon-company-logo"></use>
             </svg>
         </a>
-        <a href="#pricing" class="header-btn-mob link-button">Join</a>
-        <a href="#pricing" class="header-btn link-button">Join Now</a>
-    </div>
-    <div class="backdrop is-hidden menu container" data-backdrop-menu>
-        <div class="box">
-            <div class="munu-container">
-                <button type="button" class="icon-close-btn" data-backdrop-menu-close>
-                    <svg class="icon-close" width="24" height="24">
-                        <use href="../img/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <a class="logo-link" href="../index.html">
-                    <svg class="icon-company-logo" width="84" height="36">
-                        <use href="../img/icons.svg#icon-company-logo"></use>
-                    </svg>
-                </a>
-                <button class="header-btn-mob link-button">Join</button>
-            </div>
-            <ul class="header-menu-list-menu">
-                <li class="header-menu-item-menu"><a class="header-menu-link-menu current" href="">Yoga
-                        Classes</a>
-                </li>
-                <li class="header-menu-item-menu"><a class="header-menu-link-menu" href="">Team</a></li>
-                <li class="header-menu-item-menu"><a class="header-menu-link-menu" href="">Testimonials</a></li>
-                <li class="header-menu-item-menu"><a class="header-menu-link-menu" href="">Pricing</a></li>
-                <li class="header-menu-item-menu"><a class="header-menu-link-menu" href="">Contacts</a></li>
-            </ul>
+        <div class="link-wrapper">
+            <a href="#pricing" class="link-button header-btn-mob">
+                Join&nbsp;<span class="link-button-text">now</span>
+            </a>
         </div>
-        <button class="header-btn-menu link-button">Join Now</button>
-    </div>
+    </nav>
+
 </header>
