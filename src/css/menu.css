@@ -19,11 +19,14 @@
     padding: 12px;
 }
 
+.menu-header-link-wrapper {
+    margin-left: 16px;
+}
+
 .menu-header-link-button {
     width: 70px;
     height: 34px;
     padding: 4px 20px;
-    margin-left: 16px;
 }
 
 .menu-header-link-button-text {
@@ -55,6 +58,15 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .menu-link-wrapper {
+        text-align: start;
+    }
+
+    .menu-link-button {
+        width: 204px;
+    }
+
     .menu-header-link-button {
         width: 105px;
         height: 42px;
