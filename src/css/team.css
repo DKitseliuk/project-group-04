@@ -2,42 +2,50 @@
 .team-outer-list {
   display: flex;
   gap: 48px;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .team-outer-item {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 20px;
   width: 100%;
 }
 
-.member-info .headers {
+.team-img {
+  margin-bottom: 20px;
+}
+
+.headers {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.6;
   text-align: center;
 }
 
-.member-info .post,
-.member-info .description {
+.post,
+.description {
   line-height: 1.6;
   text-align: center;
 }
 
-.member-info .description {
-  margin-top: 12px;
+.post {
+  margin-bottom: 12px;
+}
+
+.description {
   margin-bottom: 20px;
 }
 
 .team-inner-list {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   gap: 14px;
+}
+
+.team-link {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -50,14 +58,17 @@
   .team-outer-item {
     width: calc((100% - 24px) / 2);
   }
-  .member-info .headers {
+  .team-img {
+    margin-bottom: 24px;
+  }
+  .headers {
     font-size: 22px;
   }
-  .member-info .post {
+  .post {
     font-size: 18px;
+    margin-bottom: 16px;
   }
-  .member-info .description {
-    margin-top: 16px;
+  .description {
     margin-bottom: 24px;
   }
 }
@@ -67,9 +78,7 @@
     gap: 67px 24px;
   }
   .team-outer-item {
-    width: calc((100% - 24px) / 4);
-    min-width: 421px;
-    gap: 24px;
+    width: calc((100% - 2 * 24px) / 3);
   }
 }
 
