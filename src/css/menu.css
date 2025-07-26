@@ -34,4 +34,10 @@
     }
 }
 
+@media screen and (min-width: 1336px) {
+    .backdrop {
+        display: none;
+    }
+}
+
 /*#endregion ===== Mobile and tablet styles ===== */
