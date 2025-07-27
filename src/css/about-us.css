@@ -1,92 +1,86 @@
-/*#region ===== About us styles ===== */
-.about-us{
+.about-us {
     background-color: #dfebeb;
-}
-.about-us-text {
-
-    line-height: 160%;
-    text-align: center;
-   
 }
 
 .about-us-list {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-margin-bottom: 48px;
+    margin-bottom: 48px;
 }
+
 .about-us-item {
     width: 100%;
 }
 
 .about-us-item-title {
-    font-family: "Cabin", sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 24px;
     line-height: 140%;
     letter-spacing: 0.01em;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
+.about-us-item-text {
+    margin-bottom: 0;
+}
 
-
-.link-button {
-    display: inline-block;
-    padding: 10px 24px;
-    border: 1px solid #c2d9fc;
-    background-color: #c2d9fc;
-    border-radius: 100px;
+.about-us-link-button {
     width: 100%;
-    height: 46px;
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
 }
+
 .about-us-link-button-text {
-  display: none;
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
-   .about-us{
-background-color: #f2fafa;
-padding-top: 80px;
+    .about-us {
+        background-color: #f2fafa;
+        padding-top: 80px;
     }
-.about-us-list {
-     gap: 24px;
-    margin-bottom: 40px;
-}
 
+    .about-us-list {
+        gap: 24px;
+        margin-bottom: 40px;
+    }
 
     .about-us-item {
         width: calc((100% - 24px) / 2);
         padding-bottom: 22px;
     }
-        .link-button {
-             width: 110px;
-           
-        }
-    
-        .about-us-link-button-text {
-           display: inline;
-        }
-    
+
+    .about-us-item-title {
+        margin-bottom: 0;
+    }
+
+    .about-us-item-text {
+        font-size: 16px;
+    }
+
+    .about-us-link-button {
+        width: 110px;
+    }
+
+    .about-us-link-button-text {
+        display: inline;
+    }
 }
+
 @media screen and (min-width: 1336px) {
     .about-us {
-           padding-top: 112px;
-           
-        }
- 
+        padding-top: 112px;
+    }
+
     .about-us-item {
         width: calc((100% - 72px) / 4);
         padding-bottom: 0;
     }
+
     .about-us-item-title {
-    
-        font-weight: 500;
-        font-size: 20px;
+        font-size: 28px;
+        margin-bottom: 24px;
     }
 }
+
 /*#endregion ===== About us styles ===== */
