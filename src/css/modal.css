@@ -8,7 +8,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 375px;
-min-height: 100%;
+  min-height: 100%;
   background-color: #dfebeb;
   padding: 64px 16px;
 }
@@ -112,10 +112,9 @@ min-height: 100%;
 }
 
 .form-input:not(:placeholder-shown):invalid {
-  border-color: #dc2626;
-  color: #b91c1c;
+  border-color: #b10000;
+  color: #b10000;
 }
-
 
 .form-input:not(:placeholder-shown):invalid + .error-text {
   display: block;
@@ -125,9 +124,8 @@ min-height: 100%;
   display: none;
   margin-top: 6px;
   font-size: 14px;
-  color: #dc2626;
+  color: #b10000;
 }
-
 
 .check-btn {
   display: block;

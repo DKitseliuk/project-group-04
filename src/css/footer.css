@@ -41,6 +41,7 @@
   width: 100%;
   height: 42px;
   background: rgba(13, 11, 10, 0.05);
+  transition: border-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .footer-error-text {
@@ -50,11 +51,14 @@
 
 .your-email:not(:placeholder-shown):invalid {
   border-color: #b10000;
-  display: block;
+  color: #b10000;
 }
 
 .your-email:not(:placeholder-shown):invalid + .footer-error-text {
   display: block;
+}
+
+.footer-error-text {
   color: #b10000;
   line-height: 1.6;
 }
@@ -162,6 +166,19 @@
 
   .subscribe {
     width: 595px;
+  }
+
+  .quick-links-item {
+    transition: opacity 250ms ease-in-out;
+  }
+
+  .quick-links-item:hover,
+  .quick-links-item:focus {
+    opacity: 0.5;
+  }
+
+  .quick-links-item:active {
+    opacity: 0.3;
   }
 
   .end-text-desktop {

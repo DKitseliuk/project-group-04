@@ -2,80 +2,90 @@
 
 .header-menu-list,
 .link-button-text {
-    display: none;
+  display: none;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .burger-btn {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 90px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 90px;
 }
 
 .logo-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
 }
 
 .header-link-wrapper {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .header-btn-mob {
-    padding: 4px 20px;
-    min-width: 74px;
-    height: 34px;
+  padding: 4px 20px;
+  min-width: 74px;
+  height: 34px;
 }
 
 @media screen and (min-width: 768px) {
-    .burger-btn {
-        margin-right: 254px;
-    }
+  .burger-btn {
+    margin-right: 254px;
+  }
 
-    .logo-link {
-        padding: 18px 32px;
-    }
+  .logo-link {
+    padding: 18px 32px;
+  }
 
-    .header-btn-mob {
-        padding: 8px 20px;
-        width: 105px;
-        height: 42px;
-    }
+  .header-btn-mob {
+    padding: 8px 20px;
+    width: 105px;
+    height: 42px;
+  }
 
-    .link-button-text {
-        display: inline;
-    }
+  .link-button-text {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 1336px) {
-    .burger-btn {
-        display: none;
-    }
+  .burger-btn {
+    display: none;
+  }
 
-    .header-menu-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 32px;
-        margin-right: 129px;
-    }
+  .header-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-right: 129px;
+  }
 
-    .header-menu-link {
-        display: block;
-        line-height: 1.6;
-    }
+  .header-menu-link {
+    display: block;
+    line-height: 1.6;
+    transition: opacity 250ms ease-in-out;
+  }
 
-    .header-menu-link.current {
-        border-bottom: 2px solid rgba(13, 11, 10, 0.5);
-    }
+  .header-menu-link:hover,
+  .header-menu-link:focus {
+    opacity: 0.5;
+  }
+
+  .header-menu-link:active {
+    opacity: 0.3;
+  }
+
+  .header-menu-link.current {
+    border-bottom: 2px solid rgba(13, 11, 10, 0.5);
+  }
 }
 
 /*#endregion ===== Header styles ===== */
