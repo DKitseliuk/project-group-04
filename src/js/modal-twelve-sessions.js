@@ -5,8 +5,6 @@
       modal: document.querySelector("[data-backdrop-twelve-sessions]"),
     };
   
-    if (!refs.openModalBtn || !refs.closeModalBtn || !refs.modal) return;
-  
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
     refs.modal.addEventListener("click", (event) => {

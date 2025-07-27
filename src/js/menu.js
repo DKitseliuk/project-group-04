@@ -5,8 +5,6 @@
       modal: document.querySelector("[data-backdrop-menu]"),
   };
   
-    if (!refs.openModalBtn || !refs.closeModalBtn || !refs.modal) return;
-  
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
     refs.modal.addEventListener("click", (event) => {

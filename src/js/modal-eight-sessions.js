@@ -4,8 +4,6 @@
       closeModalBtn: document.querySelector("[data-backdrop-eight-sessions-close]"),
       modal: document.querySelector("[data-backdrop-eight-sessions]"),
     };
-  
-    if (!refs.openModalBtn || !refs.closeModalBtn || !refs.modal) return;
 
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
