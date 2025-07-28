@@ -7,6 +7,7 @@
 
 .header-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -15,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 90px;
+  margin-right: 50px;
 }
 
 .logo-link {
@@ -25,10 +26,6 @@
   padding: 14px 16px;
 }
 
-.header-link-wrapper {
-  margin-left: auto;
-}
-
 .header-btn-mob {
   padding: 4px 20px;
   min-width: 74px;
@@ -36,12 +33,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header-container {
+    justify-content: flex-start;
+  }
+
   .burger-btn {
     margin-right: 254px;
   }
 
   .logo-link {
     padding: 18px 32px;
+  }
+
+  .header-link-wrapper {
+    margin-left: auto;
   }
 
   .header-btn-mob {

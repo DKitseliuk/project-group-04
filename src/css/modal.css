@@ -7,7 +7,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 375px;
+  width: 100%;
+  max-width: 375px;
   min-height: 100%;
   background-color: #dfebeb;
   padding: 64px 16px;
@@ -141,7 +142,7 @@
   .modal {
     border-radius: 16px;
     padding: 64px 92px;
-    width: 704px;
+    max-width: 704px;
     min-height: 573px;
   }
 
@@ -175,6 +176,6 @@
 @media screen and (min-width: 1336px) {
   .modal {
     padding: 64px 64px;
-    width: 768px;
+    max-width: 768px;
   }
 }
