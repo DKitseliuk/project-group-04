@@ -1,3 +1,98 @@
-/*#region ===== Hero styles ===== */
+/*#region ===== Header styles ===== */
 
-/*#endregion ===== Hero styles ===== */
+/* === Mobile === */
+.hero {
+  padding: 0;
+}
+
+.hero-img {
+  margin: 0 auto;
+}
+
+.hero-container {
+  padding: 48px 16px;
+}
+
+.hero-title {
+  font-size: 44px;
+  text-align: start;
+  margin: 0 0 20px;
+}
+
+.hero-text {
+  text-align: start;
+  margin-bottom: 24px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-right: 14px;
+}
+
+.hero-join-btn {
+  width: 100%;
+}
+
+.hero-learn-btn {
+  width: 100%;
+}
+
+/* === Tablet === */
+@media (min-width: 768px) {
+  .hero-container {
+    padding: 24px 32px;
+  }
+
+  .hero-title {
+    max-width: 424px;
+    margin-bottom: 8px;
+  }
+
+  .hero-text {
+    max-width: 640px;
+    margin-bottom: 32px;
+  }
+
+  .hero-bundle {
+    padding-top: 8px;
+  }
+
+  .hero-join-btn,
+  .hero-learn-btn {
+    width: 144px;
+  }
+}
+
+/* === Desktop  === */
+@media (min-width: 1336px) {
+  .hero-container {
+    display: flex;
+    padding: 80px 12px;
+    gap: 24px;
+  }
+
+  .hero-title {
+    font-size: 72px;
+    max-width: 644px;
+    margin-bottom: 0;
+  }
+
+  .hero-bundle {
+    max-width: calc((100% - 24px) / 2);
+  }
+
+  .hero-buttons {
+    gap: 16px;
+  }
+
+  .hero-join-btn {
+    width: 114px;
+  }
+  .hero-learn-btn {
+    width: 128px;
+  }
+}
+
+/*#endregion ===== Header styles ===== */

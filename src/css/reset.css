@@ -30,6 +30,7 @@ img {
 
 button {
   font-family: inherit;
+  color: inherit;
   background-color: transparent;
   border: none;
   cursor: pointer;
