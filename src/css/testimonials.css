@@ -51,6 +51,7 @@
 
 .testimonials-author-post {
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {

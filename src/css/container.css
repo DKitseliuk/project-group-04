@@ -1,6 +1,11 @@
-/* Styles for Mobile devices */
+/*#region ===== Containers styles ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Sarabun", sans-serif;
+  font-family: 'Sarabun', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -25,7 +30,6 @@ body {
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-
   .section,
   .footer {
     padding: 40px 0;
@@ -52,3 +56,5 @@ body {
     padding: 0 12px;
   }
 }
+
+/*#endregion ===== Containers styles ===== */
