@@ -1,88 +1,87 @@
 /*#region ===== Mobile and tablet styles ===== */
 
 .menu {
-    background-color: #f2fafa;
+  background-color: #f2fafa;
 }
 
 .menu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu-close-btn {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
 }
 
 .menu-header-link-wrapper {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 
 .menu-header-link-button {
-    width: 70px;
-    height: 34px;
-    padding: 4px 20px;
+  width: 70px;
+  height: 34px;
+  padding: 4px 20px;
 }
 
 .menu-header-link-button-text {
-    display: none;
+  display: none;
 }
 
 .menu-main {
-    padding-top: 16px;
-    padding-bottom: 160px;
-    height: 748px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 160px;
+  height: 748px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-list {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-link {
-    display: block;
-    padding: 12px 0;
-    line-height: 1.6;
+  display: block;
+  padding: 12px 0;
+  line-height: 1.6;
 }
 
 .menu-link-button {
-    width: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
+  .menu-link-wrapper {
+    text-align: start;
+  }
 
-    .menu-link-wrapper {
-        text-align: start;
-    }
+  .menu-link-button {
+    width: 204px;
+  }
 
-    .menu-link-button {
-        width: 204px;
-    }
+  .menu-header-link-button {
+    width: 105px;
+    height: 42px;
+    padding: 8px 20px;
+    margin-left: 0;
+  }
 
-    .menu-header-link-button {
-        width: 105px;
-        height: 42px;
-        padding: 8px 20px;
-        margin-left: 0;
-    }
-
-    .menu-header-link-button-text {
-        display: inline;
-    }
+  .menu-header-link-button-text {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 1336px) {
-    .menu {
-        display: none;
-    }
+  .menu {
+    display: none;
+  }
 }
 
 /*#endregion ===== Mobile and tablet styles ===== */

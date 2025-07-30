@@ -33,6 +33,7 @@
 }
 .footer-form-label {
   width: 100%;
+  position: relative;
 }
 .your-email {
   border: 1px solid rgba(255, 255, 255, 0);
@@ -45,8 +46,14 @@
 }
 
 .footer-error-text {
-  display: none;
-  margin-top: 8px;
+  position: absolute;
+  left: 13px;
+  bottom: -14px;
+  font-size: 12px;
+  line-height: 1;
+  color: #b10000;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
 }
 
 .your-email:not(:placeholder-shown):invalid {
@@ -55,12 +62,7 @@
 }
 
 .your-email:not(:placeholder-shown):invalid + .footer-error-text {
-  display: block;
-}
-
-.footer-error-text {
-  color: #b10000;
-  line-height: 1.6;
+  opacity: 1;
 }
 
 .btn-footer {

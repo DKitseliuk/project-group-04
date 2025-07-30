@@ -1,5 +1,12 @@
 /*#region ===== Header styles ===== */
 
+.header-page {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+}
+
 .header-menu-list,
 .link-button-text {
   display: none;
@@ -76,20 +83,19 @@
   .header-menu-link {
     display: block;
     line-height: 1.6;
-    transition: opacity 250ms ease-in-out;
+    border-bottom: 2px solid rgba(13, 11, 10, 0);
+    transition: opacity 250ms ease-in-out, border-bottom-color 250ms ease-in-out;
   }
 
   .header-menu-link:hover,
   .header-menu-link:focus {
+    border-bottom-color: rgba(13, 11, 10, 0.5);
     opacity: 0.5;
   }
 
   .header-menu-link:active {
+    border-bottom-color: rgba(13, 11, 10, 0.3);
     opacity: 0.3;
-  }
-
-  .header-menu-link.current {
-    border-bottom: 2px solid rgba(13, 11, 10, 0.5);
   }
 }
 

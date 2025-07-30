@@ -79,6 +79,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
 }
 
 .form-label {
@@ -118,14 +119,18 @@
 }
 
 .form-input:not(:placeholder-shown):invalid + .error-text {
-  display: block;
+  opacity: 1;
 }
 
 .error-text {
-  display: none;
-  margin-top: 6px;
-  font-size: 14px;
+  position: absolute;
+  left: 13px;
+  bottom: -18px;
+  font-size: 12px;
+  line-height: 1;
   color: #b10000;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
 }
 
 .check-btn {
